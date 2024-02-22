@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from app.utils import FileUtils
 import logging.config
 
 logger = logging.getLogger(__name__)
@@ -31,5 +32,15 @@ class AbstractMenuModel(ABC):
         pass
 
 
-class YamlMenuModel:
-    pass
+class TupleMenuModel(AbstractMenuModel):
+    def __init__(self, message: str, content):
+        super().__init__(message)
+        self.content = content
+
+    def get_choices(self) -> list:
+        items = [item for item, _ in self.content]
+        items.append("Exit")
+        return items
+
+    def get_methods(self):
+        return {item: method for item, method in self.content}

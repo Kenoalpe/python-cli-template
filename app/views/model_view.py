@@ -18,6 +18,7 @@ class MenuView:
                 choices=choices,
             )
         ]
+        print("\n")
         try:
             return inquirer.prompt(questions)['action']
         except TypeError:

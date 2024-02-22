@@ -7,3 +7,5 @@ Python CLI template based on the inquirer list interface. Complete with Object-o
 - Tests
 - PEP8 compliant
 ## How to start your project!
+Run your project with:
+`python -m app`

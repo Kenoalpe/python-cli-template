@@ -1,7 +1,0 @@
-message: "What do you want to do:"
-menu:
-  actions:
-    - name: "Option 1"
-      method: "method1"
-    - name: "Option 2"
-      method: "method2"

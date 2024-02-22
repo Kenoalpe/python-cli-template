@@ -1,1 +1,1 @@
-from .menu_model import AbstractMenuModel, YamlMenuModel
+from .menu_model import AbstractMenuModel, TupleMenuModel
