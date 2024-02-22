@@ -1,5 +1,4 @@
 import logging.config
-from app.utils import FileUtils
 
 logger = logging.getLogger(__name__)
 
